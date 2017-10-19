@@ -1,0 +1,173 @@
+.hero.is-medium.is-primary.is-fullwidth
+  %canvas#canvas{:height=>"400px"}
+  .hero-body.has-text-centered
+    %h1.title Guthrie Schoolar
+    %h3.subtitle Full Stack Web and Software Developer
+  .hero-footer
+    %nav.tabs.is-fullwidth.is-boxed
+      %ul
+        %li#education-button.is-active
+          %a{:onclick=>"openContent('education')"}
+            %i.fa.fa-graduation-cap.space
+            Education
+        %li#projects-button
+          %a{:onclick=>"openContent('projects')"}
+            %i.fa.fa-code.space
+            Projects
+        %li#about-button
+          %a{:onclick=>"openContent('about')"}
+            %i.fa.fa-user.space
+            About      
+.container
+  .section.content
+    .container{:style=>"max-width:950px"}
+      .section.tab-content#education{:style=>"display: block"}
+        %h1 Education
+        %p I'm a senior at the University of North Texas getting a B.S. in Computer Science and a certificate in Game Programming. I'm always looking for ways to better myself and learn new technologies!
+        %br/
+        .columns
+          .column
+            %h3 Coursework
+            %ul
+              %li C++ and Object Oriented Programming
+              %li Software Engineering
+              %li Systems Architecture and Operating Systems
+              %li Artificial Intelligence
+              %li Data Structures and Algorithms
+              %li UX Design
+              %li Game programming
+              %li Game Math and Physics
+          .column
+            %h3 Languages and Libraries
+            %ul
+              %li C/C++
+              %ul
+                %li Unreal 4
+                %li Boost
+                %li Network and Socket Programming
+              %li Ruby on Rails
+              %li Lua
+              %ul
+                %li LÖVE2D
+                %li Corona SDK
+              %li HTML/CSS/JS
+              %ul
+                %li JQuery
+                %li NodeJS
+                %li ReactJS
+                %li Sass
+                %li Canvas programming
+              %li Python
+              %li Assembly, VHDL
+      .section.tab-content#projects
+        %h1.title Projects
+        %h4.subtitle
+          Check out my
+          %a.has-text-primary{:href=>"http://github.com/thegoobs", :target=>"_blank"}
+            %strong.has-text-primary Github
+          to see what I've been working on.
+        .columns.is-desktop.is-multiline
+          .column
+            .card
+              .card-image
+                %figure.image.is-4by2
+                  %img{:src=>"images/maddness_featured.png"}
+              .card-content
+                %p.title Maddness
+                %p.subtitle Available now on Google Play and the App Store!
+                %p
+                  Download for
+                  %a.has-text-primary{:href=>"https://goo.gl/Sr7Wfm", :target=>"_blank"}
+                    %strong iOS
+                  and
+                  %a.has-text-primary{:href=>"https://goo.gl/gY37za", :target=>"_blank"}
+                    %strong Android.
+                %p
+                  Built in Lua with Corona SDK. Clear number tiles in
+                  a 5x5 grid by adding them up, and destroy them if the
+                  sum is zero.
+          .column
+            .card
+              .card-image
+                %figure.image.is-4by2
+                  %img{:src=>"images/lasersharks.jpg"}
+              .card-content
+                %p.title Laser Sharks
+                %p.subtitle Unreal 4 project for a Game Programming course at UNT.
+                %p
+                  Created water biome environment, animated rigged mesh, implemented basic game
+                  structure for two game modes, and implemented AI behavior trees. (Github repo unavailable)
+          .column
+            .card
+              .card-image
+                %figure.image.is-4by2
+                  %img{:src=>"images/yinyang.png"}
+              .card-content
+                %p.title Yin-Yang
+                %p.subtitle C++ 2D platformer made with DirectX and Visual Studio.
+                %p
+                  Lead programmer, implemented game mechanics, character control, Enemy AI,
+                  Game states and structure, animation and graphics.
+
+      .section.tab-content#about
+        %h1.title About
+        %h4.subtitle Who I am, and how to get in touch.
+        .columns
+          .column.has-text-centered
+            %img{:src=>"images/self-portrait.jpg", :width=>"300px", :style=>"border-radius: 100%; margin-top: 25px;"}
+            %br/
+            %br/
+            .has-text-centered
+              %a.button.is-primary{:href=>"guthrie_schoolar_resume.pdf", :target=>"_blank"}
+                %i.fa.fa-file-text.space
+                Resume
+              .button.is-primary{:onclick=>"revealEmail()"}
+                %i.fa.fa-envelope.space
+                Email Me
+              %br/
+              %br/
+              %p.subtitle.has-text-centered#info-content
+          .column
+            %p
+
+              <strong>I'm currently looking for entry level Software and Web Dev jobs and internships.</strong>
+              %br/
+              %br/
+              Aside from academics, I work as a Resident Assistant at Bruce Hall, one of the dorms at UNT. I have served in many
+              other leadership positions on campus, including being an 
+              Orientation Leader and the Vice President of a student Organization that connected programmers and designers together to make websites and other neat projects.
+              %br/
+              %br/
+              I'm originally from Austin Tx, which basically means I'm a cowboy and I bleed queso.
+              %br/
+              My hobbies include playing video games and
+              making music with my brothers.
+              %br/
+              The woman in the picture with me is my wonderful girlfriend,
+              Briana. She has supported me unconditionally through everything
+              and I cannot thank her enough for all of her love.
+
+%footer.footer
+  .container
+    .columns
+      .column.has-text-centered.spaced
+        %a{:href=>"http://github.com/thegoobs", :target=>"_blank"}
+          %i.has-text-primary.fa.fa-github.fa-2x
+        %a{:href=>"http://linkedin.com/in/guthrieschoolar", :target=>"_blank"}
+          %i.has-text-primary.fa.fa-linkedin.fa-2x
+        %a{:href=>"https://codepen.io/guthrieschoolar", :target=>"_blank"}
+          %i.has-text-primary.fa.fa-codepen.fa-2x
+        %br
+        %p Connect with me!
+
+      .column
+        %p
+          Website by Guthrie Schoolar,
+          styled with
+          %a.has-text-primary{:href=> "http://bulma.io", :target=>"_blank"}
+            %strong Bulma,
+          and deployed with
+          %a.has-text-primary{:href=> "https://middlemanapp.com", :target=>"_blank"}
+            %strong Middleman.
+        %p
+          © 2017 Guthrie Schoolar, all rights reserved.
