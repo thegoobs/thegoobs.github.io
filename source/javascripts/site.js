@@ -32,7 +32,7 @@ function loadSite() {
 	canvasDraw();
 
 	$(window).resize(function() {
-		if ($(this).width() <= 500) {
+		if ($(this).width() <= 720) {
 			$(".button-content").each(function() {
 				$(this).css("display", "none");
 			});
