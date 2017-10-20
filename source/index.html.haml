@@ -10,15 +10,15 @@
           %li#education-button.is-active
             %a{:onclick=>"openContent('education')"}
               %i.fa.fa-graduation-cap.space
-              Education
+              %span.button-content Education
           %li#projects-button
             %a{:onclick=>"openContent('projects')"}
               %i.fa.fa-code.space
-              Projects
+              %span.button-content Projects
           %li#about-button
             %a{:onclick=>"openContent('about')"}
               %i.fa.fa-user.space
-              About
+              %span.button-content About
 .container
   .section.content
     .container{:style=>"max-width:950px"}
@@ -119,7 +119,7 @@
             %br/
             %br/
             .has-text-centered
-              %a.button.is-primary{:href=>"guthrie_schoolar_resume.pdf", :target=>"_blank"}
+              %a.button.is-primary{:href=>"guthrie_schoolar_resume.pdf", :target=>"_blank", :style=>"margin-bottom: 12px"}
                 %i.fa.fa-file-text.space
                 Resume
               .button.is-primary{:onclick=>"revealEmail()"}
