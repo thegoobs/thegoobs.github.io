@@ -31,6 +31,16 @@ function revealEmail() {
 function loadSite() {
 	canvasDraw();
 
+	if ($(this).width() <= 720) {
+		$(".button-content").each(function() {
+			$(this).css("display", "none");
+		});
+	}
+	else {
+		$(".button-content").each(function() {
+			$(this).css("display", "block");
+		});	
+	}
 	$(window).resize(function() {
 		if ($(this).width() <= 720) {
 			$(".button-content").each(function() {
