@@ -19,7 +19,7 @@
     <script src="https://use.fontawesome.com/f2b29d30d8.js"></script>
 
   </head>
-  <body onload="canvasDraw()">
+  <body onload="loadSite()">
     <div class='hero is-medium is-primary is-fullwidth'>
 <canvas height='400px' id='canvas'></canvas>
 <div class='hero-body has-text-centered'>
@@ -33,19 +33,19 @@
 <li class='is-active' id='education-button'>
 <a onclick='openContent(&#39;education&#39;)'>
 <i class='fa fa-graduation-cap space'></i>
-Education
+<span class='button-content'>Education</span>
 </a>
 </li>
 <li id='projects-button'>
 <a onclick='openContent(&#39;projects&#39;)'>
 <i class='fa fa-code space'></i>
-Projects
+<span class='button-content'>Projects</span>
 </a>
 </li>
 <li id='about-button'>
 <a onclick='openContent(&#39;about&#39;)'>
 <i class='fa fa-user space'></i>
-About
+<span class='button-content'>About</span>
 </a>
 </li>
 </ul>
@@ -186,7 +186,7 @@ Game states and structure, animation and graphics.
 <br>
 <br>
 <div class='has-text-centered'>
-<a class='button is-primary' href='guthrie_schoolar_resume.pdf' target='_blank'>
+<a class='button is-primary' href='guthrie_schoolar_resume.pdf' style='margin-bottom: 12px' target='_blank'>
 <i class='fa fa-file-text space'></i>
 Resume
 </a>

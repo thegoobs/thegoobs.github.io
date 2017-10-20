@@ -27,3 +27,20 @@ function revealEmail() {
 		opacity: '1'
 	});
 }
+
+function loadSite() {
+	canvasDraw();
+
+	$(window).resize(function() {
+		if ($(this).width() <= 500) {
+			$(".button-content").each(function() {
+				$(this).css("display", "none");
+			});
+		}
+		else {
+			$(".button-content").each(function() {
+				$(this).css("display", "block");
+			});	
+		}
+	});
+}
