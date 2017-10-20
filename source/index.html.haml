@@ -4,20 +4,21 @@
     %h1.title Guthrie Schoolar
     %h3.subtitle Full Stack Web and Software Developer
   .hero-footer
-    %nav.tabs.is-fullwidth.is-boxed
-      %ul
-        %li#education-button.is-active
-          %a{:onclick=>"openContent('education')"}
-            %i.fa.fa-graduation-cap.space
-            Education
-        %li#projects-button
-          %a{:onclick=>"openContent('projects')"}
-            %i.fa.fa-code.space
-            Projects
-        %li#about-button
-          %a{:onclick=>"openContent('about')"}
-            %i.fa.fa-user.space
-            About      
+    .container
+      %nav.tabs.is-fullwidth.is-boxed
+        %ul
+          %li#education-button.is-active
+            %a{:onclick=>"openContent('education')"}
+              %i.fa.fa-graduation-cap.space
+              Education
+          %li#projects-button
+            %a{:onclick=>"openContent('projects')"}
+              %i.fa.fa-code.space
+              Projects
+          %li#about-button
+            %a{:onclick=>"openContent('about')"}
+              %i.fa.fa-user.space
+              About
 .container
   .section.content
     .container{:style=>"max-width:950px"}
