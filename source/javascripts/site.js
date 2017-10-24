@@ -41,6 +41,7 @@ function loadSite() {
 			$(this).css("display", "block");
 		});	
 	}
+	
 	$(window).resize(function() {
 		if ($(this).width() <= 720) {
 			$(".button-content").each(function() {
